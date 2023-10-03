@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario a CV</title>
+</head>
+<body> 
+    <form action="/index.php" method="post">
+        <label for="fname">Nombre y Apellidos:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="fnac">Fecha de Nacimiento :</label>
+        <input type="date" id="fnac" name="fnac"><br><br>
+
+        <label for="ocup">Ocupación :</label>
+        <input type="text" id="ocup" name="ocup"><br><br>
+
+        <label for="conta">Contacto (telefono, email):</label>
+        <input type="text" id="conta" name="conta"><br><br>
+        
+        <label for="nacion">Nacionalidad:</label>
+        <select id="nacion" name="nacion">
+            <option value="Per">Perú</option>
+            <option value="Arg">Argentina</option>
+            <option value="Col">Colombia</option>
+            <option value="Mex">México</option>
+        </select>
+        <br><br>
+        
+        <label for="niv_ingl">Nivel de ingles: básico, intermedio, avanzado, fluido:</label><br><br>
+        <input type="radio" id="Básico" name="niv_ingl" value="Básico">
+        <label for="Básico">Basico</label><br>
+        <input type="radio" id="Intermedio" name="niv_ingl" value="Intermedio">
+        <label for="Intermedio">Intermedio</label><br>
+        <input type="radio" id="Avanzado" name="niv_ingl" value="Avanzado">
+        <label for="Avanzado">Avanzado</label><br>
+        <input type="radio" id="Fluido" name="niv_ingl" value="Fluido">
+        <label for="Fluido">Fluido</label><br><br>
+               
+        <label for="progra">Lenguajes de programación:</label>
+        <select id="prog" name="prog" size="4" multiple>
+            <option value="C++">C++</option>
+            <option value="Py">Phyton</option>
+            <option value="JS">JavaScript</option>
+            <option value="Go">Go</option>
+        </select><br><br>
+
+        <label for="Apt">Aptitudes:</label>
+        <input list="Aptitudes" name="Apt" id="Apt">
+        <datalist id="Aptitudes">
+            <option value="Habilidades físicas">
+            <option value="Capacidad analítica">
+            <option value="Inteligencia emocional">
+            <option value="Espíritu crítico">
+            <option value="Trabajo en equipo">
+        </datalist><br><br>
+         
+        <label for="Habil">Habilidades:</label>  
+        <br>    
+        <input type="checkbox" id="habilidad1" name="habil1" value="Acondicionamiento físico">
+        <label for="habil1"> Acondicionamiento físico</label><br>
+        <input type="checkbox" id="habilidad2" name="habil2" value="Creación videos deportivos">
+        <label for="habil2"> Creación videos deportivos</label><br>
+        <input type="checkbox" id="habilidad3" name="habil3" value="Pack office">
+        <label for="habil3"> Pack office</label><br><br>
+        
+
+        <textarea id="Perfil" name="Perfil" rows="4" cols="50">
+        </textarea ><br><br>            
+
+          <input type="submit" value="Submit">
+    </form>   
+</body>
+</html>
